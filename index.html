@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Big Sister Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Main Application Container -->
+    <div id="app">
+        
+        <!-- Festive Background Elements -->
+        <div class="festive-background">
+            <div class="balloon b1"></div>
+            <div class="balloon b2"></div>
+            <div class="balloon b3"></div>
+            <div class="balloon b4"></div>
+            <div class="balloon b5"></div>
+            <div class="balloon b6"></div>
+        </div>
+        
+        <!-- Landing Page -->
+        <div id="landing-page" class="page active">
+            <div class="content-box main-box">
+                <h1>Happy Birthday!</h1>
+                <p class="subtitle">To the admired senior, Sicilia Agustin Rito Putri, on her special day.</p>
+                
+                <!-- The Interactive Candle -->
+                <div class="interactive-candle-section" id="candle-section" style="display: none;">
+                    <div class="candle-container-large">
+                        <i id="candle-unlit" class="fa-solid fa-candle-holder"></i>
+                        <i id="candle-lit" class="fa-solid fa-fire flame"></i>
+                    </div>
+                    <p class="instruction-text" id="instruction-text">Make your wish and blow out the candle!</p>
+                </div>
+
+                <div class="action-section">
+                    <button id="start-btn">You May Start The Celebration!<i class="fa-solid fa-wand-magic-sparkles"></i></button>
+                    
+                    <div id="icon-group" class="hidden-element">
+                        <div class="icon-wrapper" id="btn-letter">
+                            <div class="css-envelope" id="animated-envelope">
+                                <div class="env-paper"></div>
+                                <div class="env-flap"></div>
+                                <div class="env-front"></div>
+                            </div>
+                            <span>Our Letter</span>
+                        </div>
+
+                        <div class="icon-wrapper" id="btn-camera">
+                            <i class="fa-solid fa-camera camera-icon"></i>
+                            <span>Latest Memories</span>
+                        </div>
+
+                        <div class="icon-wrapper" id="btn-video">
+                            <i class="fa-solid fa-video video-icon"></i>
+                            <span>Our Video!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Message Page -->
+        <div id="message-page" class="page hidden">
+            <div class="content-box elegant-border">
+                <h2>Hello to our big sis!</h2>
+                <div class="deep-message">
+                    <p>Happy Birthday big sis Sicilia! Already older now, huh? Congratulations on the wedding also! We may have been too late for saying it, ehehe.</p>
+                    <p>May Father always bless you with His grace and guide you through your life and also the newlywed life with big bro Indra!</p>
+                    <p>Have fun with your celebration today! We also have gift for you, hehe.</p>
+                </div>
+                <button class="back-btn" id="back-from-message"><i class="fa-solid fa-arrow-left"></i> Close Letter</button>
+            </div>
+        </div>
+
+        <!-- Camera / Memory Page -->
+        <div id="camera-page" class="page hidden">
+            <div class="content-box transparent-box">
+                <p class="memory-text">"Our latest memory with you, and some of our friends!"</p>
+                
+                <div class="polaroid-gallery">
+                    <div class="polaroid img-1">
+                        <img src="IMG-20260611-WA0018.jpg" alt="Memory 1">
+                    </div>
+                    <div class="polaroid img-2">
+                        <img src="IMG-20260611-WA0019.jpg" alt="Memory 2">
+                    </div>
+                    <div class="polaroid img-3">
+                        <img src="IMG-20260611-WA0021.jpg" alt="Memory 3">
+                    </div>
+                </div>
+
+                <button class="back-btn" id="back-from-camera"><i class="fa-solid fa-arrow-left"></i> Return</button>
+            </div>
+        </div>
+
+        <!-- Video Page -->
+        <div id="video-page" class="page hidden">
+            <div class="content-box video-box">
+                <h2>Our message for you!</h2>
+                <div class="video-container">
+                    <video controls width="100%" class="custom-video">
+                        <source src="VID-20260818-WA0000.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+              <br>
+              <p>Note: Aku bantu nyampaikan pesan anak2, lagi sibuk semua kemarinnn</p>
+                <button class="back-btn" id="back-from-video"><i class="fa-solid fa-arrow-left"></i> Return</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
